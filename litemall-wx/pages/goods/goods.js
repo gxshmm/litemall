@@ -6,7 +6,7 @@ var user = require('../../utils/user.js');
 
 Page({
   data: {
-    canShare: false,
+    canShare: true,
     id: 0,
     goods: {},
     groupon: [], //该商品支持的团购规格

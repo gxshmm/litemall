@@ -38,7 +38,7 @@
 
 .goods-info {
   width: 750rpx;
-  height: 306rpx;
+  /* height: 306rpx; */
   overflow: hidden;
   background: #fff;
 }
@@ -379,7 +379,7 @@
 
 .goods-attr .right {
   float: left;
-  font-size: 36.5rpx;
+  font-size: 25rpx;
   margin-left: 20rpx;
   width: 480rpx;
   height: 45rpx;
@@ -659,7 +659,7 @@
   height: 100%;
   position: fixed;
   background: rgba(0, 0, 0, 0.5);
-  z-index: 8;
+  z-index: 11;
   bottom: 0;
   /* display: none; */
 }
@@ -671,8 +671,8 @@
   padding: 31.25rpx;
   background: #fff;
   position: fixed;
-  z-index: 9;
-  bottom: 100rpx;
+  z-index: 11;
+  bottom: 0rpx;
 }
 
 .attr-pop .close {
@@ -921,4 +921,33 @@
   background: #e0e3da;
   width: 100%;
   height: 6rpx;
+}
+.popout{
+  animation: in 0.5s;
+}
+.popin{
+  animation: out 0.5s;
+}
+@keyframes out{
+  0%{
+    transform: translateY(780rpx)
+  }
+  100%{
+    transform: translateY(0px)
+  }
+}
+@keyframes in{
+  0%{
+    transform: translateY(0rpx)
+  }
+  100%{
+    transform: translateY(780rpx)
+  }
+}
+.buy-btn{
+  margin-top: 40rpx;
+  margin-bottom: 15rpx;
+  color: #fff;
+  background:  #b4282d;
+  border-radius: 50rpx;
 }

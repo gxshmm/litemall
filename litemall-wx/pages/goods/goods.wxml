@@ -133,8 +133,8 @@
   </view>
 </view>
 <!-- 规格选择界面 -->
-<view class="attr-pop-box" hidden="{{!openAttr}}">
-  <view class="attr-pop">
+<view class="attr-pop-box " hidden="{{!openAttr}}">
+  <view class="attr-pop {{openAttr?'popin':'popout'}}">
     <view class="close" bindtap="closeAttr">
       <van-icon  class="icon" name="cross" />      
     </view>
@@ -173,6 +173,7 @@
           <view class="add" bindtap="addNumber">+</view>
         </view>
       </view>
+      <button class="buy-btn" bindtap="addFast" wx:if="{{!soldout}}">立即购买</button>
 
 
     </view>
